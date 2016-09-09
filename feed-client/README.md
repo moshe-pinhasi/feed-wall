@@ -1,4 +1,4 @@
-# feed using angular2-webpack--scss
+# feed-client using angular2-webpack--scss-bootstrap
 
 ## Dependencies
 
@@ -9,8 +9,6 @@ What you need to run this app:
 ## Installing
 * cd 'project-name'
 * `npm install` to install all dependencies
-* cd server-demo
-*`npm install` to install all the server dependencies
 
 
 ## Running the app

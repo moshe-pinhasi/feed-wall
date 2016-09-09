@@ -8,7 +8,6 @@ What you need to run this app:
 * optional - mongochef - GUI for mongodb (http://3t.io/mongochef/download/core/platform/)
 
 ## Installing (Ensure you're running Node (`v5.x.x`+) and NPM (`3.x.x`+))
-* cd feed-server
 * `npm install` # to install all dependencies
 
 ## Running the app

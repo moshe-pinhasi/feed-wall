@@ -1,7 +1,5 @@
 import { Component, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 
-import { ROUTER_DIRECTIVES } from '@angular/router';
-
 import { PostsService } from 'src/app/services';
 
 import { FeedContainerComponent, CommentCreatorComponent } from 'src/app/components';
@@ -39,7 +37,7 @@ export class AppComponent {
   }
 
   onNewComment(post) {
-    this.postsService.createPost(post)
+    this.postsService.createPost(Object.assign({}, post, {date: (new Date()).getTime()}))
       .subscribe(res => this.posts.unshift(res));
   }
 }

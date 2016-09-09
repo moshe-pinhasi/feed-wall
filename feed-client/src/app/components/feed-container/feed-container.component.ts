@@ -2,12 +2,12 @@ import { Component, Input } from '@angular/core';
 
 import { CommentComponent } from 'src/app/components';
 
-import { SearchPipe } from 'src/app/pipes';
+import { SearchPipe, SortPipe } from 'src/app/pipes';
 
 @Component({
   selector: 'feed-container',
   directives: [CommentComponent],
-  pipes: [SearchPipe],
+  pipes: [SearchPipe, SortPipe],
   styleUrls: ['./feed-container.component.scss'],
   templateUrl: `
     <div class="feedContainer">
@@ -26,14 +26,14 @@ import { SearchPipe } from 'src/app/pipes';
             class="appInput">
       </div>
 
-      <div *ngFor="let post of posts | search:filterBy"
+      <div *ngFor="let post of posts | search:filterBy | sort"
            class="feedContainer__comment">
            <comment [comment]="post"></comment>
       </div>
     </div>
   `
 })
-export class FeedContainerComponent{
+export class FeedContainerComponent {
 
   @Input('posts') posts;
 

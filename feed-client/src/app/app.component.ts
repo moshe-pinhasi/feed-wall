@@ -12,11 +12,10 @@ import '../style/inputs.scss';
  * App Component
  * Top Level Component
  */
-
-// encapsulation: ViewEncapsulation.None,
 @Component({
   selector: 'my-app',
   styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None,
   directives: [ FeedContainerComponent, CommentCreatorComponent ],
   template: `
     <div class="feed">

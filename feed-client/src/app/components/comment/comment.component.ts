@@ -1,15 +1,16 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-const md5 = require('md5');
+import { GravatarComponent } from 'src/app/components';
 
 @Component({
   selector: 'comment',
   styleUrls: ['./comment.component.scss'],
+  directives: [ GravatarComponent ],
   template: `
     <div class="comment">
 
       <div class="comment__iconContainer">
-        <img class="comment__icon" src="https://www.gravatar.com/avatar/{{gravatarHash}}?s=40">
+        <gravatar [email]="comment.email"></gravatar>
       </div>
 
       <div class="comment__detailsContainer">
@@ -20,22 +21,11 @@ const md5 = require('md5');
     </div>
   `
 })
-export class CommentComponent implements OnInit {
+export class CommentComponent {
   @Input('comment') comment;
-
-  private gravatarHash;
 
   constructor() {
 
   }
 
-  ngOnInit() {
-
-    if (!this.comment) {
-      return;
-    }
-
-    this.gravatarHash = md5(this.comment.email.trim().toLowerCase());
-
-  }
 }

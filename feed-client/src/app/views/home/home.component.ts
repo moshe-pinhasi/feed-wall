@@ -10,10 +10,8 @@ import { FeedContainerComponent, CommentCreatorComponent } from 'src/app/compone
   styles: [`
     .feed {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 800px;
-        background-color: #0000ee;
     }
 
     .feed__content {

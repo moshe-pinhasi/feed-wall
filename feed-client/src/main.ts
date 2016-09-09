@@ -4,8 +4,6 @@ import { HTTP_PROVIDERS } from '@angular/http';
 import { disableDeprecatedForms, provideForms } from '@angular/forms';
 
 import { AppComponent } from './app/app.component';
-import { APP_ROUTER_PROVIDERS } from './app/app.routes';
-
 
 import * as services from './app/services';
 
@@ -21,7 +19,6 @@ if (process.env.ENV === 'build') {
 bootstrap(AppComponent, [
     // These are dependencies of our App
     ...HTTP_PROVIDERS,
-    APP_ROUTER_PROVIDERS,
     ...providers,
     provideForms()
   ])

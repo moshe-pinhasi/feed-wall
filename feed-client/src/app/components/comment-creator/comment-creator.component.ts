@@ -14,7 +14,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
             [(ngModel)]="newComment.email"
             name="newEmail"
             placeholder="Email"
-            class="">
+            class="appInput">
         </div>
 
         <div class="commentCreator__field">
@@ -22,7 +22,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
             [(ngModel)]="newComment.message"
             name="newMessage"
             placeholder="Message"
-            class="">
+            class="appTextarea">
           </textarea>
         </div>
 

@@ -6,6 +6,7 @@ import { ConfigService, ApiService, PostsService } from './services';
 
 import '../style/app.scss';
 import '../style/btns.scss';
+import '../style/inputs.scss';
 
 /*
  * App Component

@@ -6,6 +6,7 @@ import { FeedContainerComponent, CommentCreatorComponent } from 'src/app/compone
 
 @Component({
   selector: 'my-home',
+
   directives: [ FeedContainerComponent, CommentCreatorComponent ],
   styles: [`
     .feed {

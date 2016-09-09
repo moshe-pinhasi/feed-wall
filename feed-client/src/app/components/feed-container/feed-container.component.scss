@@ -1,0 +1,34 @@
+.feedContainer {
+  height: inherit;
+  padding: 30px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid #e8e8e8;
+
+
+  &__comment {
+    margin: 0 0 15px 0;
+  }
+
+  &__filter {
+    width: 317px;
+    margin: 0 0 15px 0;
+    position: relative;
+  }
+
+  &__placeHolder {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    color: #CFCFCF;
+  }
+
+  &__filterIcon {
+    font-size: 12px;
+  }
+
+  &__filterTitle {
+    margin: 0 0 0 3px;
+  }
+}

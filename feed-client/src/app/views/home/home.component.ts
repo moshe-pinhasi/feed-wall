@@ -6,23 +6,8 @@ import { FeedContainerComponent, CommentCreatorComponent } from 'src/app/compone
 
 @Component({
   selector: 'my-home',
-
   directives: [ FeedContainerComponent, CommentCreatorComponent ],
-  styles: [`
-    .feed {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .feed__content {
-      width: 400px;
-    }
-
-    .feed__feedContainer {
-      height: 300px;
-    }
-  `],
+  styleUrls: ['./home.component.scss'],
   template: `
     <div class="feed">
       <div class="feed__content">

@@ -8,33 +8,21 @@ import { SearchPipe } from 'src/app/pipes';
   selector: 'feed-container',
   directives: [CommentComponent],
   pipes: [SearchPipe],
-  styles: [`
-    .feedContainer {
-      height: inherit;
-      padding: 30px;
-      background-color: #ffffff;
-      overflow-x: hidden;
-      overflow-y: auto;
-      border: 1px solid #e8e8e8;
-    }
-
-    .feedContainer__comment {
-      margin: 0 0 15px 0;
-    }
-
-    .feedContainer__filter {
-      width: 317px;
-      margin: 0 0 15px 0;
-    }
-  `],
+  styleUrls: ['./feed-container.component.scss'],
   templateUrl: `
     <div class="feedContainer">
+
       <div class="feedContainer__filter">
+          <span  class="feedContainer__placeHolder" *ngIf="!filterBy">
+            <span class="glyphicon glyphicon-search feedContainer__filterIcon" aria-hidden="true"></span>
+            <span class="feedContainer__filterTitle">Filter</span>
+          </span>
+
           <input
             type="text"
             [(ngModel)]="filterBy"
             name="filterBy"
-            placeholder="Filter"
+            placeholder=""
             class="appInput">
       </div>
 

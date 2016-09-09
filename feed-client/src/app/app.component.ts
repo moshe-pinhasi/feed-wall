@@ -16,6 +16,7 @@ import '../style/inputs.scss';
 // encapsulation: ViewEncapsulation.None,
 @Component({
   selector: 'my-app',
+  styleUrls: ['./app.component.scss'],
   directives: [...ROUTER_DIRECTIVES],
   encapsulation: ViewEncapsulation.None,
   template: `

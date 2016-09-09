@@ -1,0 +1,26 @@
+.comment {
+  height: 40px;
+
+  &__iconContainer, &__detailsContainer {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__iconContainer {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 0 0;
+  }
+
+  &__icon {
+    border-radius: 4px;
+  }
+
+  &__detailsContainer {
+
+  }
+  &__email {
+    font-weight: 700;
+  }
+
+}

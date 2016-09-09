@@ -1,0 +1,74 @@
+.btn {
+
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+
+  &--circle {
+    border-radius: 50%;
+  }
+
+  &--ellipse {
+    padding: 5px 30px;
+    border-radius: 50px;
+    border: 3px solid #fff;
+  }
+
+  &--radius {
+    &--small {
+      border-radius: 3px;
+      //border: 3px solid #fff;
+    }
+  }
+
+
+  &--disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  /* Button start */
+  &--green {
+    color: #fff;
+    overflow: hidden;
+    background: #2ecc71;
+    text-transform: uppercase;
+
+    &:active {
+      border-color: #17954c;
+      color: #17954c;
+    }
+
+    &:hover {
+      background: #24b662;
+    }
+  }
+
+  /* Button add */
+  &--blue {
+    width: 50px;
+    height: 50px;
+
+    color: #fff;
+    overflow: hidden;
+    background: #11a4f1;
+
+    &:active {
+      border: 3px solid #0b81c1;
+      color: #0b81c1;
+    }
+
+    &:hover {
+      background: #1097de;
+    }
+  }
+}

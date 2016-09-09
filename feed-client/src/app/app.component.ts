@@ -2,8 +2,6 @@ import { Component, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
-//import { ConfigService, ApiService, PostsService } from './services';
-
 import { PostsService } from 'src/app/services';
 
 import { FeedContainerComponent, CommentCreatorComponent } from 'src/app/components';
